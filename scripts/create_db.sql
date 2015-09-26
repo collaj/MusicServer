@@ -45,7 +45,6 @@ CREATE TABLE IF NOT EXISTS `MusicServer`.`Album` (
   `year` INT NULL,
   PRIMARY KEY (`album_id`),
   UNIQUE INDEX `album_id_UNIQUE` (`album_id` ASC),
-  UNIQUE INDEX `album_name_UNIQUE` (`album_name` ASC),
   INDEX `fk_Album_Artist_idx` (`artist_id` ASC),
   CONSTRAINT `fk_Album_Artist`
     FOREIGN KEY (`artist_id`)
