@@ -65,6 +65,7 @@ CREATE TABLE IF NOT EXISTS `MusicServer`.`Track` (
   `track_num` INT UNSIGNED NULL,
   `album_id` INT UNSIGNED NOT NULL,
   `file_path` VARCHAR(150) NOT NULL,
+  `track_length VARCHAR(6) NULL,
   PRIMARY KEY (`track_id`),
   UNIQUE INDEX `file_path_UNIQUE` (`file_path` ASC),
   INDEX `fk_Track_Album1_idx` (`album_id` ASC),
