@@ -1,0 +1,12 @@
+#### Python 2.7 ####
+- Mutagen
+- MySQL Python Connector
+
+
+#### Xampp ####
+- Apache
+- MySQL
+
+
+#### Linux ####
+- Filewatcher (Rubygems)
