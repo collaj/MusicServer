@@ -107,3 +107,6 @@ docs/_build/
 # PyBuilder
 target/
 
+# MusicServer Logs
+log
+error_log

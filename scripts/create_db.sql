@@ -15,7 +15,7 @@ DROP SCHEMA IF EXISTS `MusicServer` ;
 -- -----------------------------------------------------
 -- Schema MusicServer
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `MusicServer` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+CREATE SCHEMA IF NOT EXISTS `MusicServer` DEFAULT CHARACTER SET ucs2 ;
 USE `MusicServer` ;
 
 -- -----------------------------------------------------
