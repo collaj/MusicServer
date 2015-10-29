@@ -110,3 +110,6 @@ target/
 # MusicServer Logs
 log
 error_log
+
+# Project Workspace
+script_testing/

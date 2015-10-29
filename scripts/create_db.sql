@@ -15,7 +15,7 @@ DROP SCHEMA IF EXISTS `MusicServer` ;
 -- -----------------------------------------------------
 -- Schema MusicServer
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `MusicServer` DEFAULT CHARACTER SET ucs2 ;
+CREATE SCHEMA IF NOT EXISTS `MusicServer` DEFAULT CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ;
 USE `MusicServer` ;
 
 -- -----------------------------------------------------
@@ -64,10 +64,9 @@ CREATE TABLE IF NOT EXISTS `MusicServer`.`Track` (
   `track_name` VARCHAR(90) NOT NULL,
   `track_num` INT UNSIGNED NULL,
   `album_id` INT UNSIGNED NOT NULL,
-  `file_path` VARCHAR(150) NOT NULL,
+  `file_path` TEXT NOT NULL,
   `track_length` VARCHAR(6) NULL,
   PRIMARY KEY (`track_id`),
-  UNIQUE INDEX `file_path_UNIQUE` (`file_path` ASC),
   INDEX `fk_Track_Album1_idx` (`album_id` ASC),
   CONSTRAINT `fk_Track_Album1`
     FOREIGN KEY (`album_id`)
