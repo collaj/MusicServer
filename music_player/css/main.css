@@ -1,0 +1,123 @@
+.container{
+	width: 49%;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	max-height: 100vh;
+	min-height: 100vh;
+	float: left;
+	
+	border-style: solid;
+	border-width: 1px;
+  }
+ 
+ #queue{
+	padding: 0;
+	margin: 0;
+	float: right;
+	width: 50%;
+	max-height: 80vh;
+	min-height: 80vh;
+	overflow: auto;
+	
+	border-style: solid ;
+	border-width: 1px;
+	
+ }
+ #queue div{
+	height:50px;
+	--background-color: rgb(12,43,65);
+ }
+ 
+ #queue p{
+	margin: 0;
+	padding: 0;
+	
+ }
+ 
+ #queue a{
+	margin: 0;
+	margin-right: 10px;
+	float: left;
+	height: 100%;
+ }
+ 
+  .button {
+	 padding: 0;
+	 margin: 0;
+	 width: 100px;
+	 height: 100px;
+	 
+  }
+  #player{
+	
+	width: 50%;
+	float: right;
+  }
+  
+  #player_container{
+	border:1px solid black;
+  }
+  
+  #now_playing{
+	float: left;
+	padding:0;
+	margin:0;
+  }
+  
+  .song_container{
+	 border:1px solid black;
+	 padding: 0;
+	 margin: 0;
+     margin-bottom: 5px;
+	 min-height: 25px;
+  }
+  
+  .button_container{
+		padding: 0;
+		margin: 0;
+  }
+  
+  .song{
+	
+	max-width: 50%;
+	min-height: 25px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	word-wrap: normal;
+	
+  }
+  
+   .button1{
+	min-height: 25px;
+	max-width: 25%;
+	
+	padding: 0;
+	margin: 0;
+	
+  }
+  
+  .play_all{
+	max-width: 25%;
+  }
+  
+  .delete_song{
+	max-width: 5%;
+  }
+  
+  
+  
+  .custom-size-flipswitch.ui-flipswitch {
+    width: 8%;
+  }
+  
+  .custom-size-flipswitch.ui-flipswitch.ui-flipswitch-active {
+    width: 8%;
+}
+  
+  
+  
+  
+  
+  
