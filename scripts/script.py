@@ -82,8 +82,8 @@ def main():
         track_num = None
         track_length = audiofile.info.length
         track_length = "%02d:%02d" % (track_length // 60, track_length % 60)
-        #file_path = urllib.pathname2url(FILEPATH[FILEPATH.find("/music"):])  # use in server implementation
-        file_path = urllib.pathname2url(FILEPATH) # for testing purposes
+        file_path = urllib.pathname2url(FILEPATH[FILEPATH.find("/music"):])  # use in server implementation
+        #file_path = urllib.pathname2url(FILEPATH) # for testing purposes
         year = None
         genre = None
 
@@ -163,7 +163,7 @@ def main():
                 
                     else: # track already in database
                         LOG.write(now() + "Track already in database. Removing file...\n")
-                        #os.remove(FILEPATH) # use in server implementation
+                        os.remove(FILEPATH) # use in server implementation
             
         elif FSEVENT == "delete": # FILEPATH is the file location, but it has already been deleted, can't load it
             query = ("SELECT track_id, album_id FROM Track "

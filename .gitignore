@@ -113,3 +113,5 @@ error_log
 
 # Project Workspace
 script_testing/
+music/
+jobqueue

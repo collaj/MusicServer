@@ -10,9 +10,9 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		
-		<link rel="stylesheet" href="/music_player/css/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
 		
-		<script src="/music_player/js/player.js"></script>
+		<script src="js/player.js"></script>
 		
 		<script type="text/javascript">
             var timerStart = Date.now();
@@ -31,8 +31,8 @@
 	
 	
 	<?php
-		   include_once("/music_player/php/database.php");
-		   include_once("/music_player/php/util.php");
+		   include("php/database.php");
+		   include("php/util.php");
 		   
 		   echo '<div class = "container">';
 				buildSongs();
