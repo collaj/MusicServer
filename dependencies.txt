@@ -6,7 +6,3 @@
 #### Xampp ####
 - Apache
 - MySQL
-
-
-#### Linux ####
-- Filewatcher (Rubygems)
